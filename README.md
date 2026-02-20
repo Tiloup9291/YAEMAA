@@ -39,6 +39,12 @@ You can than copy (cp) the Image.gz file to your running board at /boot/firmware
 ```
 cp arch/arm64/boot/Image.gz /boot/firmware/kernel8.img
 ```
+Update kernel boot option, please refers to my cmdline.txt file here.
+Locate at /boot/firmware/cmdline.txt
+Than reboot to be in new kernel :
+```
+reboot
+```
 ### Ethercat building command :
 Building in the source directory.
 ```
