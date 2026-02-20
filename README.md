@@ -134,3 +134,4 @@ ethercat_ioctl write 7000 0 5 1
 2. Dynamically update available PDO/SDO/subindex/position/value of command read and write;
 3. Protection for overflow of buffer, socket, array, datatype;
 4. Closing faster;
+5. Make automatic building process.
