@@ -19,7 +19,7 @@ This tool is a CLI tool and also a service. Both are accessible from the same bi
 - libsystemd-dev
 ### My setup
 - Raspberry pi 4 B
-- Debian 13 trixie raspberry pi OS Lite 64 bits
+- Debian 14 trixie raspberry pi OS Lite 64 bits
 - AMSAMOTION EC1A-IO16R (Hardware version 0.1, Software version 0.1 (but ESI file tells revision number : 0x00010001. Label on device tells : v1.1)
 - My setup right now have a full cycle time of 1 ms (including sleep) and a loop processing time of 40 us.
 ### Overview
