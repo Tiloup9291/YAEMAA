@@ -5,7 +5,6 @@
 
 void handle_signal(int sig){
 	if (sig == SIGTERM || sig == SIGINT){
-		//shutdown_signal = 1;
 		atomic_store_explicit(&run_enable, 0, memory_order_release);
 		sd_notify(0, "STATUS=Stopping...");
 	}else if (sig == SIGHUP){
