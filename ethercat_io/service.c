@@ -26,10 +26,6 @@ int service(void){
 	pthread_attr_t thattr;
 	uint16_t outputState = 0;
 
-//	signal(SIGTERM, handle_signal);
-//	signal(SIGINT, handle_signal);
-//	signal(SIGHUP, handle_signal);
-
 	struct sigaction sa;
 	sa.sa_handler = handle_signal;
 	sigemptyset(&sa.sa_mask);
@@ -162,9 +158,6 @@ int service(void){
 		}
 		close(client);
 		usleep(20000);
-	//	if (shutdown_signal){
-	//		atomic_store_explicit(&run_enable, 0, memory_order_release);
-	//	}
 	}
 	sd_journal_print(LOG_INFO,"Exiting non-rt thread\n");
 	if (pthread_join(rt, NULL) != 0){
