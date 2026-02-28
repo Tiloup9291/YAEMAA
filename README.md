@@ -22,6 +22,7 @@ This tool is a CLI tool and also a service. Both are accessible from the same bi
 - Debian 14 trixie raspberry pi OS Lite 64 bits
 - AMSAMOTION EC1A-IO16R (Hardware version 0.1, Software version 0.1 (but ESI file tells revision number : 0x00010001. Label on device tells : v1.1)
 - My setup right now have a full cycle time of 1 ms (including sleep) and a loop processing time of 40 us.
+- I also test my setup with an rt loop of 10khz. Full cycle time of 0.1ms (including sleep) and a loop processing time of less than 40 us.
 ### Overview
 You can find here the ESI file of this board, my kernel .config file, also my kernel boot option in cmdline.txt and of course the source files.
 Native building on the running rpi 4b.
@@ -133,6 +134,5 @@ ethercat_ioctl write 7000 0 5 1
 1. Dynamically configure PDO/SDO from ESI (xml) device file;
 2. Dynamically update available PDO/SDO/subindex/position/value of command read and write;
 3. Protection for overflow of buffer, socket, array, datatype;
-4. Closing faster;
-5. Make automatic building process;
-6. Implement argp interface for application man/help/usage.
+4. Make automatic building process;
+5. Implement argp interface for application man/help/usage.
