@@ -6,5 +6,4 @@
 #include <signal.h>
 
 extern _Atomic uint32_t run_enable;
-extern volatile sig_atomic_t shutdown_signal;
 #endif /* _FLAGS_H_ */
